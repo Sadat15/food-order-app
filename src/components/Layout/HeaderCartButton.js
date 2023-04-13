@@ -1,9 +1,9 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import classes from "./HeaderCartButton.module.css";
 
-function HeaderCartButton() {
+function HeaderCartButton({ onClick }) {
   return (
-    <button className={classes.button}>
+    <button className={classes.button} onClick={onClick}>
       <span className={classes.icon}>
         <AiOutlineShoppingCart />
       </span>
